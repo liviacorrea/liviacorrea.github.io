@@ -209,12 +209,14 @@ width:25px;
     background-color:rgba(255, 255, 255, 0.75);
     background: #F8F8FF url(../images/bg/brickwall.png);
     border:solid;
-    border-width:2px;
-    padding:50px;
+    border-width:4px;
+    padding:30px;
     border-color:lightgray;
     text-align:justify;
-    margin-bottom:50px;
+    margin-top:20px;
+    margin-bottom:20px;
     margin-left:10px;
+    margin-right:10px;
     min-height:400px;
 }
 
