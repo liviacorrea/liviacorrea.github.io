@@ -32,7 +32,7 @@
     <link href="css/submenu.css" rel="stylesheet">
 
      <!-- Small page icon -->
-    <link rel="icon" href="../images/livlogo/livlogo2.png">
+    <link rel="icon" href="../images/favicon.png">
 
 	<!-- mathjax  https://www.mathjax.org/#gettingstarted  -->
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
@@ -75,7 +75,7 @@
 <!--
 <nav id="navbar-main" class="navbar navbar-inverse" style="background-color: #7d2427"; >
 <nav id="navbar-main" class="navbar navbar-blue-bg2">
- -->    
+ -->
 
 <nav id="navbar-main" class="navbar navbar-inverse navbar-fixed-top navbar-liv">
   <div class="container-fluid">
@@ -146,7 +146,7 @@
     State University (PPG-EM UERJ).<!-- My research interests include Heat and Mass Transfer,
     Integral Transform Technique, Numerical Methods, Thermodynamics, and Computational
 	Fluid Dynamics.--> I currently work with the development of semi-analytical formulations 
-	for heat transfer problems at the <a href="http://www.gesar.uerj.br" target="_blank">GESAR</a> lab, Group for Environmental Studies in 
+	for heat transfer problems at the <a href="http://www.gesar.uerj.br" >GESAR</a> lab, Group for Environmental Studies in 
 	Reservoirs.</p>
 	<b style= "color:#1b199a">Research interests:</b><br>
 	<ul>
@@ -160,7 +160,7 @@
 	<div align="center">
 	<a target="_blank" href=" http://lattes.cnpq.br/1893054420494603" target="_top"style= "color:#7d2427;"><img  src="images/info/lattes-logo.png" alt="lattes" height="65px"></a> 
 	<a target="_blank" href="https://www.researchgate.net/profile/Livia_Correa4" target="_top"style= "color:#7d2427;"> <img  src="images/info/logo-researchgate.png" alt="researchgate" height="65px"></a> 
-    	<a target="_blank"href="https://orcid.org/0000-0002-4075-3029" target="_top"style= "color:#7d2427;"><img  src="images/info/logo-ORCID-id.png" alt="orcid" height="65px"></a> <br>
+    <a target="_blank"href="https://orcid.org/0000-0002-4075-3029" target="_top"style= "color:#7d2427;"><img  src="images/info/logo-ORCID-id.png" alt="orcid" height="65px"></a> <br>
 	</div>	
 	<br>
 
@@ -185,7 +185,7 @@
     State University (PPG-EM UERJ).<!-- My research interests include Heat and Mass Transfer,
     Integral Transform Technique, Numerical Methods, Thermodynamics, and Computational
 	Fluid Dynamics.--> I currently work with the development of semi-analytical formulations 
-	for heat transfer problems at the <a href="http://www.gesar.uerj.br" target="_blank">GESAR</a> lab, Group for Environmental Studies in 
+	for heat transfer problems at the <a href="http://www.gesar.uerj.br">GESAR</a> lab, Group for Environmental Studies in 
 	Reservoirs.</p>
 	<b style= "color:#1b199a">Research interests:</b><br>
 	<ul>
@@ -199,7 +199,7 @@
 	<div align="center">
 	<a target="_blank" href=" http://lattes.cnpq.br/1893054420494603" target="_top"style= "color:#7d2427;"><img  src="images/info/lattes-logo.png" alt="lattes" height="65px"></a> 
 	<a target="_blank" href="https://www.researchgate.net/profile/Livia_Correa4" target="_top"style= "color:#7d2427;"> <img  src="images/info/logo-researchgate.png" alt="researchgate" height="65px"></a> 
-    	<a target="_blank"href="https://orcid.org/0000-0002-4075-3029" target="_top"style= "color:#7d2427;"><img  src="images/info/logo-ORCID-id.png" alt="orcid" height="65px"></a> <br>
+    <a target="_blank"href="https://orcid.org/0000-0002-4075-3029" target="_top"style= "color:#7d2427;"><img  src="images/info/logo-ORCID-id.png" alt="orcid" height="65px"></a> <br>
 	</div>		
 	
   </div>
@@ -293,7 +293,7 @@ document.getElementById("demo").innerHTML = "";
 
 for(year=currentyear; year>=2016; year--){
 
-    document.getElementById("demo").innerHTML += "<h2>" + year.toString() + "</h2>  ";
+    document.getElementById("demo").innerHTML += "<h2 style= "color:#1b199a">" + year.toString() + "</h2>  ";
     if ((year >= 2016) && (year <= currentyear)) { nome = "livcorrea"; loadXMLDoc(nome, year); };
 
 };
@@ -338,6 +338,11 @@ function myFunction(xml,ano) {
 	list += "</p>";
 
 	if ((list.toLowerCase().indexOf("mangiavacchi") !== -1) && (nome === "chalhub")) { list = ""; };
+	if ((list.toLowerCase().indexOf("mangiavacchi") !== -1) && (nome === "anjos")) { list = ""; };
+	if ((list.toLowerCase().indexOf("mangiavacchi") !== -1) && (nome === "pontes")) { list = ""; };
+	if ((list.toLowerCase().indexOf("chalhub") !== -1) && (nome === "pontes")) { list = ""; };
+	if ((list.toLowerCase().indexOf("chalhub") !== -1) && (nome === "anjos")) { list = ""; };
+	if ((list.toLowerCase().indexOf("pontes") !== -1) && (nome === "anjos")) { list = ""; };
 
     document.getElementById("demo").innerHTML += list;
     list="";
@@ -366,6 +371,11 @@ function myFunction(xml,ano) {
 	list += "</p>";
 
 	if ((list.toLowerCase().indexOf("mangiavacchi") !== -1) && (nome === "chalhub")) { list = ""; };
+	if ((list.toLowerCase().indexOf("mangiavacchi") !== -1) && (nome === "anjos")) { list = ""; };
+	if ((list.toLowerCase().indexOf("mangiavacchi") !== -1) && (nome === "pontes")) { list = ""; };
+	if ((list.toLowerCase().indexOf("chalhub") !== -1) && (nome === "pontes")) { list = ""; };
+	if ((list.toLowerCase().indexOf("chalhub") !== -1) && (nome === "anjos")) { list = ""; };
+	if ((list.toLowerCase().indexOf("pontes") !== -1) && (nome === "anjos")) { list = ""; };
 
     document.getElementById("demo").innerHTML += list;
     list="";
@@ -405,7 +415,7 @@ function myFunction(xml,ano) {
                 <div align="center">
                 <h4 style= "color:#1b199a">Universidade do Estado do Rio de Janeiro (UERJ)</h4>
                 <h5>Centro de Ciência e Tecnologia (CTC)</h5>
-                <a href="http://www.gesar.uerj.br" target="_blank"><img class="img-responsive center-block" src="images/info/gesar-index.png" width="230px"></a>
+                <a href="http://www.gesar.uerj.br" ><img class="img-responsive center-block" src="images/info/gesar-index.png" width="230px"></a>
                 <br>
                 </div>
                 <div align="left">
@@ -479,7 +489,7 @@ function myFunction(xml,ano) {
 <footer class="footer">
    <div class="container hidden-xs">
    <div style="margin-top:-10px;">
-   <a href="http://www.gesar.uerj.br" target="_blank">
+   <a href="http://www.gesar.uerj.br" >
           <img align="left" src="images/Header/logo-gesar-tudo-branco.png" alt="GESAR" height="65px"></a>
 	</div>
       <p class="text-muted" align="left">
@@ -491,7 +501,7 @@ function myFunction(xml,ano) {
 
    <div class="container visible-xs">
    <div style="margin-top:-10px;">
-<a href="http://www.gesar.uerj.br" target="_blank">
+<a href="http://www.gesar.uerj.br">
     <img align="center" src="images/Header/logo-gesar-tudo-branco.png" alt="GESAR" height="65px"></a>
   </div>
    </div>
