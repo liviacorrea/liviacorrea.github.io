@@ -23,12 +23,20 @@ a {
 }
 
 body {
-  margin-top: 20px;
-  padding-top: 50px;
-  margin-bottom: 50px;
-  padding-bottom: 50px;
-  background: #F8F8FF url(../images/bg/arab.png); /*../images/bg/red/red2.png*/
+  margin-top: 0px;
+  /*padding-top: 70px;*/
+  margin-bottom: 60px;
+  background: #F8F8FF url(../images/bg/whitemadra.png);
 }
+
+/*
+body {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #F8F8FF url(../images/bg/arab.png); 
+}*/
 
 h1{
 /*font-family: Georgia;*/
@@ -36,8 +44,12 @@ font-size:32px;
 color:#7d2427;
 }
 
+h2{
+color:#1b199a;
+}
+
 .starter-template {
-  padding: 40px 15px;
+  /*padding: 40px 15px;*/
   text-align: center;
 }
 
@@ -46,24 +58,13 @@ html {
   min-height: 100%;
 }
 
+/*
 .page-header{
 	margin-bottom:-1px;
 	margin-top:-20px;
 	height:125px;
-	background: linear-gradient(0deg, rgb(0, 0, 80) 0%, rgb(10, 0, 32) 80%); /*#ffffff url(../images/bg/green/green12.png); linear-gradient(90deg, rgb(96, 157, 85) 0%, rgb(45, 110, 44) 80%);*/
-}
-
-.headerfiguerj{
-align: center;
-	height:auto;
-	max-width:80%;
-
-	width:auto;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-}
+	background: linear-gradient(0deg, rgb(0, 0, 80) 0%, rgb(10, 0, 32) 80%); 
+}*/
 
 
 .headerfigmecan{
@@ -203,13 +204,15 @@ width:25px;
     background-color:rgba(255, 255, 255, 0.75);
     background: #F8F8FF url(../images/bg/brickwall.png);
     border:solid;
-    border-width:2px;
-    padding:50px;
+    border-width:4px;
+    padding:25px;
     border-color:lightgray;
     text-align:justify;
-    margin-bottom:50px;
+    margin-top:20px;
+    margin-bottom:20px;
     margin-left:10px;
-    min-height:400px;
+    margin-right:10px;
+   /* min-height:400px;*/
 }
 
 
@@ -268,7 +271,7 @@ width:25px;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 90px;
-  background-color: #4d0019; /*#095275; #B4B4B4; #F8F8F8;*/
+  background-color: #1b199a; /*#4d0019; #095275; #B4B4B4; #F8F8F8;*/
   /*background: url(../images/bg/leaf.jpg);*/
   padding-top:20px;
   margin-bottom:0px;
