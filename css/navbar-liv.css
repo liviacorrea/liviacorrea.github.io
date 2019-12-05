@@ -59,6 +59,6 @@
 .navbar-liv .navbar-nav .open .dropdown-menu > .active > a,
 .navbar-liv .navbar-nav .open .dropdown-menu > .active > a:hover,
 .navbar-liv .navbar-nav .open .dropdown-menu > .active > a:focus {
-  color: #1b199a;
+  color: #4d0019;/*#1b199a;*/
   background-color: #d0d1d2;
 }
