@@ -167,6 +167,27 @@ position: relative;
   transform: translateY(4px);
 }
 
+.tools {
+  padding: 14px 24px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  color: #ca2121;
+  background-color: #ca2121;
+  border-width:2px;
+  border: #911818;
+  border-color: #bbbbbb;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.tools:hover {
+	background-color: #7d2427;
+	color: #fff;
+}
+
+
+
 
 .buttonsm {
   padding: 14px 24px;
