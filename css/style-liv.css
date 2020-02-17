@@ -242,7 +242,7 @@ width:25px;
     background: #F8F8FF url(../images/bg/whitedots.png);
     border:solid;
     border-width:4px;
-    padding:30px;
+    padding:40px;
     border-color:lightgray;
     text-align:justify;
     margin-bottom:50px;
@@ -304,7 +304,7 @@ width:25px;
 
 .column {
   float: left;
-  padding: 10px;
+  /*padding: 10px; */
    width: 50%;
 }
 
