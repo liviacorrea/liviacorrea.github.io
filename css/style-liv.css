@@ -144,7 +144,7 @@ position: relative;
 }
 
 .button {
- /* padding: 14px 24px; */
+  padding: 14px 24px; 
   font-size: 18px;
   text-align: center;
   cursor: pointer;
@@ -242,7 +242,7 @@ width:25px;
     background: #F8F8FF url(../images/bg/whitedots.png);
     border:solid;
     border-width:4px;
-    padding:25px;
+    padding:30px;
     border-color:lightgray;
     text-align:justify;
     margin-bottom:40px;
