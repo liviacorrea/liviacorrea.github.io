@@ -49,6 +49,10 @@ h2{
 color:#1b199a;
 }
 
+b{
+font-family: American Typewriter;
+}
+
 .starter-template {
   /*padding: 40px 15px;*/
   text-align: center;
