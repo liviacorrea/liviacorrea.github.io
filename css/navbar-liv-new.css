@@ -28,10 +28,10 @@
   color: #8A2352;
   background-color: #EEF3F4;
   border-top-right-radius: 10px; 
-  /* border-bottom-right-radius: 10px; */
+  border-bottom-right-radius: 10px; 
   border-top-left-radius: 10px;
-  /* border-bottom-left-radius: 10px; */
-  text-decoration: underline dotted 3px #902C2C dashed;
+  border-bottom-left-radius: 10px; 
+  text-decoration: underline, 3px, #902C2C, dashed;
 }
 .navbar-liv {
   border-color: #902C2C; /* #4d0019*/
