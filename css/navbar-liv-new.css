@@ -31,7 +31,7 @@
   border-bottom-right-radius: 10px; 
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px; 
-  text-decoration: underline, 3px, #902C2C, dashed;
+  text-decoration: underline, 3px, dashed;
 }
 .navbar-liv {
   border-color: #902C2C; /* #4d0019*/
