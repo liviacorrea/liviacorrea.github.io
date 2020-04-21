@@ -110,8 +110,8 @@ font-size:22px;
       background: linear-gradient(white, #d7dae0);
     }
 #Contact {
-      background: linear-gradient(#d7dae0, white);
-      /*background-color: white;*/
+      /*background: linear-gradient(#d7dae0, white);*/
+      background-color: white;
       padding-left:40px;
       padding-right:40px;
     }
