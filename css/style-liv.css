@@ -92,8 +92,8 @@ font-size:22px;
 
 #Intro {
       background-color: white;
-      margin-left:10px;
-      margin-right:10px;
+      padding-left:10px;
+      padding-right:10px;
     }
 #Bio {
       background: linear-gradient(white, #d7dae0);
@@ -109,8 +109,8 @@ font-size:22px;
     }
 #Contact {
       background-color: white;
-      margin-left:10px;
-      margin-right:10px;
+      padding-left:10px;
+      padding-right:10px;
     }
 
 .starter-template {
