@@ -107,8 +107,12 @@ font-size:22px;
 #Publications {
       background: linear-gradient(#d7dae0, white);
     }
+#Mission {
+      background: linear-gradient(white, #d7dae0);
+    }
 #Contact {
-      background-color: white;
+      background: linear-gradient(#d7dae0, white);
+      /*background-color: white;*/
       padding-left:10px;
       padding-right:40px;
     }
