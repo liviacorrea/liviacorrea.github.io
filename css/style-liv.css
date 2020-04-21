@@ -54,8 +54,20 @@ font-family: American Typewriter;
 font-size:22px;
 }
 
+#Bio {
+      background-color: yellow;
+    }
 #Topics {
       background-color: blue;
+    }
+#Tools {
+      background-color: green;
+    }
+#Publications {
+      background-color: red;
+    }
+#Contact {
+      background-color: white;
     }
 
 .starter-template {
