@@ -55,16 +55,16 @@ font-size:22px;
 }
 
 #Bio {
-      background-color: yellow;
+      background-color: linear-gradient(white, gray);
     }
 #Topics {
-      background-color: blue;
+      background-color: linear-gradient(gray, white);
     }
 #Tools {
-      background-color: green;
+      background-color: linear-gradient(white, gray);
     }
 #Publications {
-      background-color: red;
+      background-color: linear-gradient(gray, white);
     }
 #Contact {
       background-color: white;
