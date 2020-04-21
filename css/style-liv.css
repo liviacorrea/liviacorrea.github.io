@@ -54,17 +54,20 @@ font-family: American Typewriter;
 font-size:22px;
 }
 
+#Intro {
+      background-color: white;
+    }
 #Bio {
-      background: linear-gradient(white, gray);
+      background: linear-gradient(white, #d7dae0);
     }
 #Topics {
-      background: linear-gradient(gray, white);
+      background: linear-gradient(#d7dae0, white);
     }
 #Tools {
-      background: linear-gradient(white, gray);
+      background: linear-gradient(white, #d7dae0);
     }
 #Publications {
-      background: linear-gradient(gray, white);
+      background: linear-gradient(#d7dae0, white);
     }
 #Contact {
       background-color: white;
