@@ -101,12 +101,15 @@ font-size:22px;
     }
 #Topics {
       background: linear-gradient(#d7dae0, white);
+      padding-top: 40px;
     }
 #Tools {
       background: linear-gradient(white, #d7dae0);
+      padding-top: 40px;
     }
 #Publications {
       background: linear-gradient(#d7dae0, white);
+      padding-top: 40px;
     }
 #Mission {
       background: linear-gradient(white, #d7dae0);
@@ -116,6 +119,7 @@ font-size:22px;
       background-color: white;
       padding-left:40px;
       padding-right:40px;
+      padding-top: 40px;
     }
 
 .starter-template {
