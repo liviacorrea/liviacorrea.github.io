@@ -360,7 +360,7 @@ document.getElementById("demo").innerHTML = "";
 for(year=currentyear; year>=2016; year--){
 
     document.getElementById("demo").innerHTML += "<h2>" + year.toString() + "</h2>  ";
-    if ((year >= 2016) && (year <= currentyear-1)) { nome = "livcorrea"; loadXMLDoc(nome, year); };
+    if ((year >= 2016) && (year <= currentyear)) { nome = "livcorrea"; loadXMLDoc(nome, year); };
 
 };
 
@@ -415,14 +415,13 @@ function myFunction(xml,ano) {
   for (i = 0; i <x.length; i++) {
     if(x[i].getElementsByTagName("DADOS-BASICOS-DO-TRABALHO")[0].getAttribute("ANO-DO-TRABALHO")!=ano){continue;};
     list += "<p>";
+    list += "<b>- " + x[i].getElementsByTagName("DADOS-BASICOS-DO-TRABALHO")[0].getAttribute("TITULO-DO-TRABALHO") + "</b>";
+	list +=", ";	  
     var y = x[i].getElementsByTagName("AUTORES");
     for(j = 0; j <y.length; j++)  {
         list += y[j].getAttribute("NOME-PARA-CITACAO").split(";")[0];
 	   list += ", ";
 	}
-
-    list += "<b>" + x[i].getElementsByTagName("DADOS-BASICOS-DO-TRABALHO")[0].getAttribute("TITULO-DO-TRABALHO") + "</b>";
-	list +=", ";
 	list += x[i].getElementsByTagName("DETALHAMENTO-DO-TRABALHO")[0].getAttribute("NOME-DO-EVENTO");
 	list +=", ";
 	list += x[i].getElementsByTagName("DETALHAMENTO-DO-TRABALHO")[0].getAttribute("CIDADE-DO-EVENTO");
