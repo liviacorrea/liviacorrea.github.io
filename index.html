@@ -390,7 +390,7 @@ function myFunction(xml,ano) {
   for (i = 0; i <x.length; i++) {
     if(x[i].getElementsByTagName("DADOS-BASICOS-DO-ARTIGO")[0].getAttribute("ANO-DO-ARTIGO")!=ano){continue;};
     list += "<p>";  
-    list += "<b->" + x[i].getElementsByTagName("DADOS-BASICOS-DO-ARTIGO")[0].getAttribute("TITULO-DO-ARTIGO") + "</b>";
+    list += "<b>- " + x[i].getElementsByTagName("DADOS-BASICOS-DO-ARTIGO")[0].getAttribute("TITULO-DO-ARTIGO") + "</b>";
     list +="<br> Authors:";
     var y = x[i].getElementsByTagName("AUTORES");
     for (j = 0; j < y.length; j++) {
