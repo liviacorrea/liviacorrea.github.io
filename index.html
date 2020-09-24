@@ -391,7 +391,7 @@ function myFunction(xml,ano) {
     if(x[i].getElementsByTagName("DADOS-BASICOS-DO-ARTIGO")[0].getAttribute("ANO-DO-ARTIGO")!=ano){continue;};
     list += "<p>";  
     list += "<b>- " + x[i].getElementsByTagName("DADOS-BASICOS-DO-ARTIGO")[0].getAttribute("TITULO-DO-ARTIGO") + "</b>";
-    list +="<br> Authors:";
+    list +="<br> Authors: ";
     var y = x[i].getElementsByTagName("AUTORES");
     for (j = 0; j < y.length; j++) {
 	   list += y[j].getAttribute("NOME-PARA-CITACAO").split(";")[0];
@@ -401,7 +401,7 @@ function myFunction(xml,ano) {
     list += x[i].getElementsByTagName("DETALHAMENTO-DO-ARTIGO")[0].getAttribute("TITULO-DO-PERIODICO-OU-REVISTA");
 	list +=", ";
 	list += ano.toString();//x[i].getElementsByTagName("DADOS-BASICOS-DO-ARTIGO")[0].getAttribute("ANO-DO-ARTIGO");
-	list += "</p>";
+	list += ".</p>";
 
 	if ((list.toLowerCase().indexOf("mangiavacchi") !== -1) && (nome === "chalhub")) { list = ""; };
 
@@ -418,10 +418,9 @@ function myFunction(xml,ano) {
     list += "<p>";
     list +=  
     list += "<b>- " + x[i].getElementsByTagName("DADOS-BASICOS-DO-TRABALHO")[0].getAttribute("TITULO-DO-TRABALHO") + "</b>";
-    list +="<br>";	  
+    list +="<br> Authors: ";	  
     var y = x[i].getElementsByTagName("AUTORES");
-    for(j = 0; j <y.length; j++)  {
-	list +="<br> Authors: ";    
+    for(j = 0; j <y.length; j++)  {   
         list += y[j].getAttribute("NOME-PARA-CITACAO").split(";")[0];
 	   list += ", ";
 	}
