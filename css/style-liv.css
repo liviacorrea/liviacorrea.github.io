@@ -107,23 +107,23 @@ text-align:left;
       padding-right:40px;
     }
 #Bio {
-      background: linear-gradient(white, #d7dae0);
+      background: linear-gradient(white, #f2f2f2);
       padding-top: 40px;
     }
 #Topics {
-      background: linear-gradient(#d7dae0, white);
+      background: linear-gradient(#f2f2f2, white);
       padding-top: 40px;
     }
 #Tools {
-      background: linear-gradient(white, #d7dae0);
+      background: linear-gradient(white, #f2f2f2);
       padding-top: 40px;
     }
 #Publications {
-      background: linear-gradient(#d7dae0, white);
+      background: linear-gradient(#f2f2f2, white);
       padding-top: 40px;
     }
 #Mission {
-      background: linear-gradient(white, #d7dae0);
+      background: linear-gradient(white, #f2f2f2);
     }
 #Contact {
       /*background: linear-gradient(#d7dae0, white);*/
