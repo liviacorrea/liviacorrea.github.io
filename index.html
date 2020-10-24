@@ -816,14 +816,12 @@ var _0x4ff5=["\x67\x65\x74\x46\x75\x6C\x6C\x59\x65\x61\x72","","\x69\x6E\x6E\x65
 	</div>
 	
 	<div class="text-info" Style="font-size:8" align="right">
-  		Last update on <script>
-function myFunction() {
-  var x = new Date(document.lastModified);
-  document.getElementById("demo").innerHTML = x;
-}
-</script> <br> <!--<strong>Bootstrap 3</strong>-->
+  		Last update on <span id="modify"></span>. <br> <!--<strong>Bootstrap 3</strong>-->
 	</div>
-	
+<script>
+document.getElementById("modify").innerHTML = document.lastModified
+</script>
+			
 </div>
 
 <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
