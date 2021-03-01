@@ -7,14 +7,15 @@
   border-color: #FFFFFF /*#003400*/;
   font-family: American Typewriter, serif;
   /*font-weight: bold;*/
- font-size: 15px;
+ font-size: 16px;
 }
-.navbar-liv .navbar-brand,
+.navbar-liv .navbar-brand{
+  min-height: 80px;
+}
 .navbar-liv .navbar-text,
 .navbar-liv .navbar-nav > li > a,
 .navbar-liv .navbar-link {
   color: #902C2C /*#902C2C*/ ;
-  min-height: 80px;
 }
 
 .navbar-liv .navbar-brand:hover,
