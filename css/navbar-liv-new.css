@@ -3,11 +3,11 @@
 }
 
 .navbar-liv {
-  background-color: #902C2C /* #4d0019   #902C2C */;
-  border-color: #FFFFFF; /*#003400*/
+  background-color: #FFFFFF /* #4d0019   #902C2C */;
+  border-color: #902C2C /*#003400*/;
   font-family: American Typewriter, serif;
   /*font-weight: bold;*/
- font-size: 17px;
+ font-size: 15px;
 }
 .navbar-liv .navbar-brand,
 .navbar-liv .navbar-text,
