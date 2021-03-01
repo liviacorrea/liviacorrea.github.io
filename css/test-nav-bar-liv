@@ -13,7 +13,7 @@
 .navbar-liv .navbar-text,
 .navbar-liv .navbar-nav > li > a,
 .navbar-liv .navbar-link {
-  color:  #FFFFFF /*#902C2C*/ ;
+  color: #902C2C /*#902C2C*/ ;
 }
 
 .navbar-liv .navbar-brand:hover,
