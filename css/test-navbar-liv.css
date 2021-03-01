@@ -14,6 +14,7 @@
 .navbar-liv .navbar-nav > li > a,
 .navbar-liv .navbar-link {
   color: #902C2C /*#902C2C*/ ;
+  min-height: 80px;
 }
 
 .navbar-liv .navbar-brand:hover,
