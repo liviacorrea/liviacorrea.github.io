@@ -32,7 +32,7 @@
 .navbar-liv .navbar-toggle,
 .navbar-liv .navbar-toggle:hover,
 .navbar-liv .navbar-toggle:focus {
- color: #902C2C /*transparent*/;
+ color: #093573 /*#902C2C*/ /*transparent*/;
 /* -webkit-text-stroke: 1px var(--mainColor);
 @supports not(-webkit-text-stroke: 2px red) {
   a:hover {
