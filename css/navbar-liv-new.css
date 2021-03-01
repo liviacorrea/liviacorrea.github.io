@@ -1,10 +1,10 @@
 :root {
-  --mainColor: #FFFFFF /*#902C2C #FFFFFF*/ ;
+  --mainColor: #902C2C /* #FFFFFF*/ ;
 }
 
 .navbar-liv {
-  background-color: #FFFFFF /* #4d0019   #902C2C */;
-  border-color: #902C2C /*#003400*/;
+  background-color: #902C2C /* #4d0019   #902C2C */;
+  border-color: #FFFFFF /*#003400*/;
   font-family: American Typewriter, serif;
   /*font-weight: bold;*/
  font-size: 15px;
@@ -13,7 +13,7 @@
 .navbar-liv .navbar-text,
 .navbar-liv .navbar-nav > li > a,
 .navbar-liv .navbar-link {
-  color: #902C2C /*#FFFFFF*/ ;
+  color:  #FFFFFF /*#902C2C*/ ;
 }
 
 .navbar-liv .navbar-brand:hover,
@@ -30,7 +30,7 @@
 .navbar-liv .navbar-toggle,
 .navbar-liv .navbar-toggle:hover,
 .navbar-liv .navbar-toggle:focus {
- color: #FFFFFF /*#902C2C*/ /*transparent*/;
+ color: #902C2C /*transparent*/;
 /* -webkit-text-stroke: 1px var(--mainColor);
 @supports not(-webkit-text-stroke: 2px red) {
   a:hover {
