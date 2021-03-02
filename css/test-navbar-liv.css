@@ -67,7 +67,7 @@
 */
 .navbar-liv .navbar-nav .open .dropdown-menu {
   background-color: #4d0019;
-  border-color: #003400;
+  /*border-color: #003400;*/
   color: #FFFFFF;
 }
 .navbar-liv .navbar-nav .open .dropdown-menu > li,
