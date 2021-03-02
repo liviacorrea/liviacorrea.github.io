@@ -328,6 +328,10 @@ width:25px;
   border-color:#E7E7E7;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .column {
   float: left;
   padding: 10px; 
