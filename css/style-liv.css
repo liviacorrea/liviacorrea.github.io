@@ -331,9 +331,15 @@ width:25px;
 .column {
   float: left;
   padding: 10px; 
-   width: 50%;
 }
 
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
 
 
 /* Clear floats after the columns */
