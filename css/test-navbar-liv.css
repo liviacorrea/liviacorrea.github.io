@@ -10,7 +10,7 @@
  font-size: 16px;
 }
 .navbar-liv .navbar-brand{
-  min-height: 55px;
+  min-height: 60px;
 }
 .navbar-liv .navbar-text,
 .navbar-liv .navbar-nav > li > a,
@@ -49,7 +49,7 @@
   border-bottom-right-radius: 10px; 
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px; 
-  color: #093573 /*#8A2352*/;
+  color: #27408B /*#8A2352*/;
   text-decoration: underline;
    /*
   text-decoration-style: dotted; */
