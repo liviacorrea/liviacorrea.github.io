@@ -479,7 +479,7 @@ function myFunction(xml,ano) {
   for (i = 0; i <x.length; i++) {
     if(x[i].getElementsByTagName("DADOS-BASICOS-DO-ARTIGO")[0].getAttribute("ANO-DO-ARTIGO")!=ano){continue;};
     list += "<p>";  
-    list += "<b>- " + x[i].getElementsByTagName("DADOS-BASICOS-DO-ARTIGO")[0].getAttribute("TITULO-DO-ARTIGO") + "</b>";
+    list += "<b>" i+1 + x[i].getElementsByTagName("DADOS-BASICOS-DO-ARTIGO")[0].getAttribute("TITULO-DO-ARTIGO") + "</b>";
     list +="<br> Authors: ";
     var y = x[i].getElementsByTagName("AUTORES");
     for (j = 0; j < y.length; j++) {
@@ -515,7 +515,7 @@ var list = "";
 var nome;	
 	
 document.getElementById("conference").innerHTML = "";
-document.getElementById("conference").innerHTML = "<liv>Conference publications:</liv><br>";
+document.getElementById("conference").innerHTML = "<liv>Conference publications/presentations:</liv><br>";
 
 for(year=currentyear; year>=2016; year--){
 
