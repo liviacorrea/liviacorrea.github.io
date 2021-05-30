@@ -434,11 +434,11 @@
 <div id="Publications" class="container-fluid">
   <h1>Publications</h1>
 <!--<hr>-->
-<h3>Journal publications</h3>
 <div id="demo"> 
-
+<liv>Journal publications</liv>
+	
 <script type="text/javascript">
-	var currentyear = new Date().getFullYear();
+var currentyear = new Date().getFullYear();
 var year;
 var list = "";
 var nome;	
@@ -503,11 +503,11 @@ function myFunction(xml,ano) {
 
 }
 </script>
-	<h3>Conference publications</h3>
+	<liv>Conference publications</liv>
 
 <script type="text/javascript">
 
-function myFunctionconf(xml,ano) {
+function myFunction(xml,ano) {
 
   var i;
   var j;
@@ -519,11 +519,11 @@ function myFunctionconf(xml,ano) {
     if(xconf[i].getElementsByTagName("DADOS-BASICOS-DO-TRABALHO")[0].getAttribute("ANO-DO-TRABALHO")!=ano){continue;};
     list += "<p>";
     list +=  
-    list += "<b>" + x[i].getElementsByTagName("DADOS-BASICOS-DO-TRABALHO")[0].getAttribute("TITULO-DO-TRABALHO") + "</b>";
+    list += "<b>" + xconf[i].getElementsByTagName("DADOS-BASICOS-DO-TRABALHO")[0].getAttribute("TITULO-DO-TRABALHO") + "</b>";
     list +="<br> Authors: ";	  
-    var y = xconf[i].getElementsByTagName("AUTORES");
+    var yconf = xconf[i].getElementsByTagName("AUTORES");
     for(j = 0; j <y.length; j++)  {   
-        list += y[j].getAttribute("NOME-COMPLETO-DO-AUTOR").split(";")[0]; //era NOME-PARA-CITACAO
+        list += yconf[j].getAttribute("NOME-COMPLETO-DO-AUTOR").split(";")[0]; //era NOME-PARA-CITACAO
 	   list += "; ";
 	}
 	list += "<br> Conference: ";  
