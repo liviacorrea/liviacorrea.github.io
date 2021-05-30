@@ -485,7 +485,7 @@ function myFunction(xml,ano) {
     list +=", vol.";
     list += x[i].getElementsByTagName("DETALHAMENTO-DO-ARTIGO")[0].getAttribute("VOLUME");  
     list +=", "; 
-    if(x[i].getElementsByTagName("DETALHAMENTO-DO-ARTIGO")[0].getAttribute("PAGINA-INICIAL")!=""){list += x[i].getElementsByTagName("DETALHAMENTO-DO-ARTIGO")[0].getAttribute("PAGINA-INICIAL")"};	  
+    if(x[i].getElementsByTagName("DETALHAMENTO-DO-ARTIGO")[0].getAttribute("PAGINA-INICIAL")!=""){list += x[i].getElementsByTagName("DETALHAMENTO-DO-ARTIGO")[0].getAttribute("PAGINA-INICIAL")};	  
     if(x[i].getElementsByTagName("DETALHAMENTO-DO-ARTIGO")[0].getAttribute("PAGINA-FINAL")!=""){list += "--"x[i].getElementsByTagName("DETALHAMENTO-DO-ARTIGO")[0].getAttribute("PAGINA-FINAL")};	   
     list +=", "; 	  
     list += ano.toString();//x[i].getElementsByTagName("DADOS-BASICOS-DO-ARTIGO")[0].getAttribute("ANO-DO-ARTIGO");
