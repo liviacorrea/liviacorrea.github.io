@@ -513,8 +513,7 @@ var currentyear = new Date().getFullYear();
 var year;
 var list = "";
 var nome;	
-
-		
+	
 document.getElementById("conference").innerHTML = "";
 document.getElementById("conference").innerHTML = "<liv>Conference publications:</liv><br>";
 
@@ -538,12 +537,6 @@ function loadXMLDoc(nome,ano) {
       xmlhttp.open("GET", nome + ".xml", false);
       xmlhttp.send();
 }
-
-function myFunction(xml,ano) {
-
-  var i;
-  var j;
-  var xmlDoc = xml.responseXML;
 
 function myFunction(xml,ano) {
 
