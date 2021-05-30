@@ -156,7 +156,8 @@
 
 <div class="row" > <!--style="margin-top:-10px;"-->	
 <!--<h2 align="center" style="font-family:American Typewriter; color:#771B29"><b>Welcome!</b></h2>	-->
-	<div class="column left">
+
+<!--	<div class="column left">
  	<br>
          <div class="col-md-12"  align="center">
          <img class="img-thumbnail img-responsive center-block" align="center" src="images/photos/index-foto.jpg" height="150px" width="150px">
@@ -172,9 +173,10 @@
 	<a target="_blank" href="https://twitter.com/livzcorrea" target="_top"style= "color:#7d2427;"><img  src="images/info/twitter-logo.png" alt="twitter" height="48px"></a>  <br>
 	-->
 	  </div>	
-	</div>	
+	</div>
+-->	
 	
-  <div class="column middle" >
+  <div class="column left" > <!--middle-->
 	<!--style="font-family:Merriweather;font-size:1.2em"-->
 	<!--<liv style= "color:#093573">About me:</liv><br>  -->
 	<!--<h3 align="center" style="font-family:American Typewriter; color:#771B29"><b>Welcome to my webpage!</b></h3> -->
@@ -202,9 +204,38 @@
  
 	<div class="column right" >
  	<br>
-         <!--teste-->
-	</div>		
-	<br>
+          <h1>Education</h1>
+		 <!-- <hr> -->
+     		<div class="row">
+    	
+    	<div class="col-md-4 portfolio-item professor" align="center">
+            <a href="https://www.uerj.br" target="_blank"><img src="images/info/logos.png" alt="PPG-EM" width="240" ></a>
+	    <a href="http://www.ppgem.uerj.br/en/index.html" target="_blank"><h4>M.Sc. Mechanical Engineering</h4></a>
+            <p class="AreaResumo"style="text-align:center">Rio de Janeiro State University, 2020. <br>
+	    <b>   Thermal analysis of heat sinks: an analytical approach using integral transforms </b> <br>
+	    <!--Advisor: <a href="http://danielchalhub.com/" target="_blank"> Prof. Daniel Chalhub</a>  -->
+	    </p>
+            </div>
+    	
+        <div class="col-md-4 portfolio-item professor" align="center"> <!--col-md-4-->
+            <a href="https://www.uerj.br" target="_blank"><img src="images/info/Logo_uerj_cor.gif" alt="UERJ" width="100" ></a>
+            <a href="http://www.mecanica.uerj.br/en/" target="_blank"><h4>B.Eng. Mechanical Engineering</h4></a>
+            <p class="AreaResumo"style="text-align:center">Rio de Janeiro State University, 2018. <br>
+	    <b>Solution of heat conduction in Solid-state electronics utilizing integral transforms </b> <br>
+	    <!--Advisor: <a href="http://danielchalhub.com/" target="_blank"> Prof. Daniel Chalhub</a> -->
+	    </p>
+            </div>
+        <!--
+          <div class="col-md-4 portfolio-item professor" align="center">
+            <img class="img-circle pesquisathumbnail" src="images/info/csa-logo.png" alt="CSA" width="90">
+            <br>
+            <a href="http://www.csa.com.br" target="_blank"><h4>High School </h4></a>
+            <p class="AreaResumo"style="text-align:center">Colégio Santo Agostinho (CSA-Leblon)<br>Rio de Janeiro, Brazil.</p>
+            </div> -->
+        
+    </div>
+  
+</div>
   	
 </div>
 </div>
@@ -479,7 +510,7 @@ function myFunction(xml,ano) {
   for (i = 0; i <x.length; i++) {
     if(x[i].getElementsByTagName("DADOS-BASICOS-DO-ARTIGO")[0].getAttribute("ANO-DO-ARTIGO")!=ano){continue;};
     list += "<p>";  
-    list += "<b>" i + x[i].getElementsByTagName("DADOS-BASICOS-DO-ARTIGO")[0].getAttribute("TITULO-DO-ARTIGO") + "</b>";
+    list += "<b>- " + x[i].getElementsByTagName("DADOS-BASICOS-DO-ARTIGO")[0].getAttribute("TITULO-DO-ARTIGO") + "</b>";
     list +="<br> Authors: ";
     var y = x[i].getElementsByTagName("AUTORES");
     for (j = 0; j < y.length; j++) {
@@ -550,7 +581,7 @@ function myFunction(xml,ano) {
     if(xconf[i].getElementsByTagName("DADOS-BASICOS-DO-TRABALHO")[0].getAttribute("ANO-DO-TRABALHO")!=ano){continue;};
     list += "<p>";
     list +=  
-    list += "<b>" + xconf[i].getElementsByTagName("DADOS-BASICOS-DO-TRABALHO")[0].getAttribute("TITULO-DO-TRABALHO") + "</b>";
+    list += "<b>- " + xconf[i].getElementsByTagName("DADOS-BASICOS-DO-TRABALHO")[0].getAttribute("TITULO-DO-TRABALHO") + "</b>";
     list +="<br> Authors: ";	  
     var yconf = xconf[i].getElementsByTagName("AUTORES");
     for(j = 0; j <yconf.length; j++)  {   
