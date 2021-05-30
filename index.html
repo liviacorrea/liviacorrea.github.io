@@ -434,16 +434,15 @@
 <div id="Publications" class="container-fluid">
   <h1>Publications</h1>
 <!--<hr>-->
-<div id="demo"> 
 <liv>Journal publications</liv>
-	
+<div id="journal"> 	
 <script type="text/javascript">
 var currentyear = new Date().getFullYear();
 var year;
 var list = "";
 var nome;	
 
-document.getElementById("demo").innerHTML = "";
+document.getElementById("journal").innerHTML = "";
 
 for(year=currentyear; year>=2016; year--){
 
@@ -503,9 +502,44 @@ function myFunction(xml,ano) {
 
 }
 </script>
-	<liv>Conference publications</liv>
+	
+<div id="conference"> 
 
 <script type="text/javascript">
+	var currentyear = new Date().getFullYear();
+var year;
+var list = "";
+var nome;	
+
+document.getElementById("conference").innerHTML = "";
+document.getElementById("conference").innerHTML = "<liv>Conference publications</liv>";
+
+for(year=currentyear; year>=2016; year--){
+
+    //document.getElementById("demo").innerHTML += "<h2>" + year.toString() + "</h2>  ";
+    if ((year >= 2016) && (year <= 2020)) { nome = "livcorrea"; loadXMLDoc(nome, year); };
+	if ((year >= 2021) && (year <= currentyear)) { nome = "curriculo"; loadXMLDoc(nome, year); };
+
+};
+
+function loadXMLDoc(nome,ano) {
+
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this,ano);
+    }
+  };
+
+      xmlhttp.open("GET", nome + ".xml", false);
+      xmlhttp.send();
+}
+
+function myFunction(xml,ano) {
+
+  var i;
+  var j;
+  var xmlDoc = xml.responseXML;
 
 function myFunction(xml,ano) {
 
