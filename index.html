@@ -434,7 +434,7 @@
 <div id="Publications" class="container-fluid">
   <h1>Publications</h1>
 <!--<hr>-->
-
+<h2>Journal publications</h2>
 <div id="demo"> 
 
 <script type="text/javascript">
@@ -504,8 +504,11 @@ function myFunction(xml,ano) {
 
   }
 
-
-  //CONGRESSOS
+}
+</script>
+	<h2>Conference publications</h2>
+<!--
+   //CONGRESSOS
   x = xmlDoc.getElementsByTagName("TRABALHO-EM-EVENTOS");
   for (i = 0; i <x.length; i++) {
     if(x[i].getElementsByTagName("DADOS-BASICOS-DO-TRABALHO")[0].getAttribute("ANO-DO-TRABALHO")!=ano){continue;};
@@ -532,9 +535,7 @@ function myFunction(xml,ano) {
     list="";
 
   }
-
-}
-</script>
+-->
 </div> 	<!--#demo-->
 	
 	</div>	<!--#publications-->
