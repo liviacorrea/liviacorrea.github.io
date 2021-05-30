@@ -514,6 +514,8 @@ function myFunction(xml,ano) {
     list +=", vol.";
     list += x[i].getElementsByTagName("DETALHAMENTO-DO-ARTIGO")[0].getAttribute("VOLUME");  
     list +=", "; 
+    list += x[i].getElementsByTagName("DETALHAMENTO-DO-ARTIGO")[0].getAttribute("PAGINA-INICIAL")"--"x[i].getElementsByTagName("DETALHAMENTO-DO-ARTIGO")[0].getAttribute("PAGINA-FINAL");  
+    list +=", "; 	  
     list += ano.toString();//x[i].getElementsByTagName("DADOS-BASICOS-DO-ARTIGO")[0].getAttribute("ANO-DO-ARTIGO");
     list += ".</p>";
 
