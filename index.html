@@ -507,57 +507,29 @@ function myFunction(xml,ano) {
 
 <script type="text/javascript">
 
-var currentyear = new Date().getFullYear();
-var year;
-var list = "";
-var nome;	
-
-document.getElementById("demo").innerHTML = "";
-
-for(year=currentyear; year>=2016; year--){
-
-    //document.getElementById("demo").innerHTML += "<h2>" + year.toString() + "</h2>  ";
-    if ((year >= 2016) && (year <= 2020)) { nome = "livcorrea"; loadXMLDoc(nome, year); };
-	if ((year >= 2021) && (year <= currentyear)) { nome = "curriculo"; loadXMLDoc(nome, year); };
-
-};
-
-function loadXMLDoc(nome,ano) {
-
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      myFunction(this,ano);
-    }
-  };
-
-      xmlhttp.open("GET", nome + ".xml", false);
-      xmlhttp.send();
-}
-
-function myFunction(xml,ano) {
+function myFunctionconf(xml,ano) {
 
   var i;
   var j;
   var xmlDoc = xml.responseXML;
 
   //CONGRESSOS
-  x = xmlDoc.getElementsByTagName("TRABALHO-EM-EVENTOS");
+ var xconf = xmlDoc.getElementsByTagName("TRABALHO-EM-EVENTOS");
   for (i = 0; i <x.length; i++) {
-    if(x[i].getElementsByTagName("DADOS-BASICOS-DO-TRABALHO")[0].getAttribute("ANO-DO-TRABALHO")!=ano){continue;};
+    if(xconf[i].getElementsByTagName("DADOS-BASICOS-DO-TRABALHO")[0].getAttribute("ANO-DO-TRABALHO")!=ano){continue;};
     list += "<p>";
     list +=  
     list += "<b>" + x[i].getElementsByTagName("DADOS-BASICOS-DO-TRABALHO")[0].getAttribute("TITULO-DO-TRABALHO") + "</b>";
     list +="<br> Authors: ";	  
-    var y = x[i].getElementsByTagName("AUTORES");
+    var y = xconf[i].getElementsByTagName("AUTORES");
     for(j = 0; j <y.length; j++)  {   
         list += y[j].getAttribute("NOME-COMPLETO-DO-AUTOR").split(";")[0]; //era NOME-PARA-CITACAO
 	   list += "; ";
 	}
 	list += "<br> Conference: ";  
-	list += x[i].getElementsByTagName("DETALHAMENTO-DO-TRABALHO")[0].getAttribute("NOME-DO-EVENTO");
+	list += xconf[i].getElementsByTagName("DETALHAMENTO-DO-TRABALHO")[0].getAttribute("NOME-DO-EVENTO");
 	list +=", ";
-	list += x[i].getElementsByTagName("DETALHAMENTO-DO-TRABALHO")[0].getAttribute("CIDADE-DO-EVENTO");
+	list += xconf[i].getElementsByTagName("DETALHAMENTO-DO-TRABALHO")[0].getAttribute("CIDADE-DO-EVENTO");
 	list +=", ";
 	list += ano.toString();
 	list += ".</p>";
