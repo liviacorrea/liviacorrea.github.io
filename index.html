@@ -433,8 +433,8 @@
 	
 <div id="Publications" class="container-fluid">
   <h1>Publications</h1>
+	
 <!--<hr>-->
-<liv>Journal publications</liv>
 <div id="journal"> 	
 <script type="text/javascript">
 var currentyear = new Date().getFullYear();
@@ -443,6 +443,7 @@ var list = "";
 var nome;	
 
 document.getElementById("journal").innerHTML = "";
+document.getElementById("journal").innerHTML = "<liv>Journal publications</liv>";
 
 for(year=currentyear; year>=2016; year--){
 
@@ -495,7 +496,7 @@ function myFunction(xml,ano) {
 
 	if ((list.toLowerCase().indexOf("mangiavacchi") !== -1) && (nome === "chalhub")) { list = ""; };
 
-    document.getElementById("demo").innerHTML += list;
+    document.getElementById("journal").innerHTML += list;
     list="";
 
   }
@@ -570,7 +571,7 @@ function myFunction(xml,ano) {
 
 	if ((list.toLowerCase().indexOf("mangiavacchi") !== -1) && (nome === "chalhub")) { list = ""; };
 
-    document.getElementById("demo").innerHTML += list;
+    document.getElementById("conference").innerHTML += list;
     list="";
 
   }
