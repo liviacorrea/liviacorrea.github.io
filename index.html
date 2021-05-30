@@ -508,11 +508,7 @@ function myFunction(xml,ano) {
 <div id="conference"> 
 
 <script type="text/javascript">
-	var currentyear = new Date().getFullYear();
-var year;
-var list = "";
-var nome;	
-
+		
 document.getElementById("conference").innerHTML = "";
 document.getElementById("conference").innerHTML = "<liv>Conference publications</liv>";
 
@@ -551,14 +547,14 @@ function myFunction(xml,ano) {
 
   //CONGRESSOS
  var xconf = xmlDoc.getElementsByTagName("TRABALHO-EM-EVENTOS");
-  for (i = 0; i <x.length; i++) {
+  for (i = 0; i <xconf.length; i++) {
     if(xconf[i].getElementsByTagName("DADOS-BASICOS-DO-TRABALHO")[0].getAttribute("ANO-DO-TRABALHO")!=ano){continue;};
     list += "<p>";
     list +=  
     list += "<b>" + xconf[i].getElementsByTagName("DADOS-BASICOS-DO-TRABALHO")[0].getAttribute("TITULO-DO-TRABALHO") + "</b>";
     list +="<br> Authors: ";	  
     var yconf = xconf[i].getElementsByTagName("AUTORES");
-    for(j = 0; j <y.length; j++)  {   
+    for(j = 0; j <yconf.length; j++)  {   
         list += yconf[j].getAttribute("NOME-COMPLETO-DO-AUTOR").split(";")[0]; //era NOME-PARA-CITACAO
 	   list += "; ";
 	}
