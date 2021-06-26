@@ -899,62 +899,13 @@ var _0x93fc=["\x67\x65\x74\x46\x75\x6C\x6C\x59\x65\x61\x72","","\x69\x6E\x6E\x65
   <h1>Contact</h1>
 	<br>		
  <div>	
-	
-<form method="GET" action="mailto:livcorrea@yahoo.com.br" enctype="text/plain">
-    <div style="font-family:American Typewriter" >Subject</div>
-    <input type="text" name="subject" />
 
-    <div style="font-family:American Typewriter" >Name</div>
-    <input name="Name" />
-
-    <div style="font-family:American Typewriter" >E-Mail</div>
-    <input name="E-Mail Address" />
-
-    <div style="font-family:American Typewriter" >Message</div>
-    <textarea name="Message"></textarea>
-
-    <br/>
-    <input type="submit" value="Send" />
-
-    <input type="hidden" name="body" />
-</form>
-
-<script>
-   var form = document.getElementsByTagName('form')[0];
-   form.addEventListener('submit',contact,false);
-   function contact(e) {
-      // Prevent Default Form Submission
-      e.preventDefault();
-
-      var target = e.target || e.srcElement;
-      var i = 0;
-      var message = '';
-
-      // Loop Through All Input Fields
-      for(i = 0; i < target.length; ++i) {
-         // Check to make sure it's a value. Don't need to include Buttons
-         if(target[i].type != 'text' && target[i].type != 'textarea') {
-                // Skip to next input since this one doesn't match our rules
-            continue;
-         }
-
-         // Add Input Name and value followed by a line break
-         message += target[i].name + ': ' + target[i].value + "\r\n";
-      }
-      // Modify the hidden body input field that is required for the mailto: scheme
-      target.elements["body"].value = message;
-
-      // Submit the form since we previously stopped it. May cause recursive loop in some browsers? Should research this.
-      this.submit();
-   }
-</script>
-			
 	<h4 style="font-family:American Typewriter" >Lívia M. Corrêa</h4>
 	<img class="img-thumbnail img-responsive" src="images/photos/index-foto.jpg" height="150px" width="150px"><br><br>		
 	<a target="_blank"href="https://orcid.org/0000-0002-4075-3029"  target="_top"style= "color:#7d2427;"><img  src="images/info/logo-ORCID-id.png" alt="orcid" height="48px"></a> 
 	<a target="_blank" href=" http://lattes.cnpq.br/1893054420494603" target="_top"style= "color:#7d2427;"><img  src="images/info/lattes-logo.png" alt="lattes" height="48px"></a>
 	<a target="_blank" href="https://www.researchgate.net/profile/Livia_Correa4" target="_top"style= "color:#7d2427;"> <img  src="images/info/logo-researchgate.png" alt="researchgate" height="48px"></a> 
-   	<!-- <h5><a href="mailto:livcorrea@yahoo.com.br" >livcorrea@yahoo.com.br</a> </h5>-->
+   	<h5><a href="mailto:livcorrea@yahoo.com.br" >livcorrea@yahoo.com.br</a> </h5>
 			
 			
 	<br> <br> <br> <br> 
