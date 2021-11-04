@@ -94,8 +94,8 @@ text-align:left;
       padding-top: 40px;
     }
 #Contact {
-      /*background: linear-gradient(#d7dae0, white);*/
-      background-color: #f2f2f2;
+      /*background: linear-gradient(white,#f2f2f2);*/
+      background-color: white;
       padding-left:40px;
       padding-right:40px;
       padding-top: 40px;
@@ -332,12 +332,16 @@ width:25px;
   padding: 10px; 
 }
 
-.left, .right {
+.left {
   width: 25%;
 }
 
 .middle {
-  width: 50%;
+  width: 40%;
+}
+
+.right {
+  width: 35%;
 }
 
 
