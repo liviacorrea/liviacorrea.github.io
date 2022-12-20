@@ -66,7 +66,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 h1{
-font-family: Arial; /*serif; American Typewriter;*/
+font-family: serif; /*serif; American Typewriter;*/
 font-weight: bold;	
 font-size:32px;
 color:#902C2C; /*#7d2427*/
@@ -77,7 +77,7 @@ color: #093573; /*#1b199a*/
 }
 
 liv{
-font-family: serif; /*American Typewriter;*/
+font-family: arial; /*American Typewriter;*/
 font-size:22px;
 text-align:left;	
 }
