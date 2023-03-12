@@ -92,8 +92,9 @@ text-align:left;
       padding-top: 40px;
     }
 #Publications {
-      background: linear-gradient(#f2f2f2,white);
-     /* padding-top: 40px;*/
+      /* background: linear-gradient(#f2f2f2,white);
+      padding-top: 40px;*/
+      background-color: white;
     }
 #Tools {
       background: linear-gradient(#f2f2f2,white);
