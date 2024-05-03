@@ -61,7 +61,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     /* background: #F8F8FF url(../images/bg/whitedots.png);*/	
     border:solid;
     border-width:4px;
-    border-color:lightgray;
+    border-color:white; /*lightgray;*/
     text-align:justify;
     margin-bottom:40px;
     min-height:400px;
