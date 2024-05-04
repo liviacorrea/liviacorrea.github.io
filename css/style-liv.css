@@ -68,7 +68,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 h1{
-font-family: serif; /*serif; American Typewriter;*/
+font-family: helvetica; /*serif; American Typewriter;*/
 font-weight: bold;	
 font-size:32px;
 color:#902C2C; /*#7d2427*/
@@ -76,13 +76,19 @@ color:#902C2C; /*#7d2427*/
 
 h2{
 color: #093573; /*#1b199a*/
+font-family: helvetica;	
 }
 
 liv{
-font-family: arial; /*American Typewriter;*/
+font-family: helvetica; /* arial;  American Typewriter;*/
 font-size:22px;
 text-align:left;	
 }
+
+p {
+	font-family: helvetica;
+}
+	
 
 #Intro {
       background-color: white;
