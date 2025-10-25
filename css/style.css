@@ -1,13 +1,13 @@
 /* ===== Base Typography ===== */
 body {
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.7;
+  font-family: 'Raleway', sans-serif; /* 'Open Sans'*/
+  line-height: 1.8;
   color: #333;
   background-color: #fafafa;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Merriweather', serif;
+  font-family: 'Lora', serif;    /* 'Merriweather', serif; */
 }
 
 /* ===== Navbar ===== */
@@ -46,8 +46,8 @@ a:hover {
 
 /* ===== Social Icons ===== */
 .social-icons a {
-  color: #1b2a49;
-  transition: color 0.2s ease;
+  color: #5b684e; /* Camouflage green */     /* #1b2a49; navy blue */
+  transition: color 0.25s ease;
 }
 
 .social-icons a:hover {
@@ -72,6 +72,17 @@ a:hover {
 
 .research-card:hover i {
   color: #7d2427;
+}
+
+/* Gentle hover motion */
+.profile-photo:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.research-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
 }
 
 /* ===== Section Title ===== */
