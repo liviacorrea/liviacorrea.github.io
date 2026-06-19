@@ -105,6 +105,7 @@ p {
       /* background: linear-gradient(#f2f2f2,white);
       padding-top: 40px;*/
       background-color: white;
+	  scroll-margin-top: 80px;
     }
 #Tools {
       /* background: linear-gradient(#f2f2f2,white);
