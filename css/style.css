@@ -43,6 +43,14 @@ h1, h2, h3, h4, h5 {
   transform: scale(1.02);
 }
 
+.research-figure {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
 /* ===== Links ===== */
 a {
   color: #1b2a49;
